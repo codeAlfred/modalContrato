@@ -1,0 +1,68 @@
+
+<nb-card class="modal1">
+    <nb-card-header class="cerrar" >
+        <nb-icon icon="close" (click)="close()"></nb-icon>            
+    </nb-card-header>
+    
+    <nb-card-body >
+        <div class="encabezado">   
+            <img src="../../../assets/cancel.svg" alt="cancelar">
+            <p class="subtitulo" style=" color: #0c6d97; font-weight: bold;">Desestimar el contrato</p>
+            <p class="pregunta">¿Estas seguro/a de desestimar este contrato?</p>
+        </div>
+
+        <div style="margin-top: 1rem;">
+            <p class="decoracion">1</p>
+            <p style="display: inline; margin-left: 6px;">Debes de <span style="font-weight: bold;">elegir una categoria</span> e ingresar un motivo </p>            
+        </div>
+        <div class="contenido1">
+            <div class="catesustento">
+                <div class="cate">
+                    <p>Seleccione una categoría</p>
+                    <nb-select placeholder="Select Showcase" [(selected)]="selectedItem">
+                        <nb-option value="">Option empty</nb-option>
+                        <nb-option value="0">Option 0</nb-option>
+                        <nb-option value="1">Option 1</nb-option>
+                        <nb-option value="2">Option 2</nb-option>
+                        <nb-option value="3">Option 3</nb-option>
+                        <nb-option value="4">Option 4</nb-option>
+                      </nb-select>
+                </div>
+                <div class="sustento">
+                    <p>Subir sustento en formato pdf</p>
+                    <nb-form-field>                        
+                        <input type="text" nbInput>
+                        <nb-icon nbSuffix icon="close" pack="eva"></nb-icon>
+                    </nb-form-field>
+                    
+                </div>
+            </div>
+            <div class="motivo">
+                <p>Motivo</p>
+                <textarea nbInput fullWidth shape="semi-round" placeholder=""></textarea>
+            </div>
+        </div>
+    
+        <div >
+            <p class="decoracion">2</p>
+            <p style="display: inline; margin-left: 6px;">Ahora deberás elegir un <span style="font-weight: bold;">accesitario</span> para crear tu nuevo contrato</p>            
+        </div>
+        <div class="contenido2">
+            <div class="buscar">
+                <p>Buscar por Nombres o número de documento</p>
+                <nb-form-field>                        
+                    <input type="text" nbInput>
+                    <nb-icon nbSuffix icon="search" pack="eva"></nb-icon>
+                </nb-form-field>
+            </div>
+            <div class="tabla">
+
+            </div>
+
+        </div>
+    </nb-card-body>
+    <nb-card-footer class="footer">
+        <button class="btnfooter" nbButton outline status="primary" shape="round">Cancelar</button> 
+        <button class="btnfooter" nbButton outline status="primary" shape="round">Aceptar</button>      
+    </nb-card-footer>
+</nb-card>
