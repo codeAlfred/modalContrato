@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
 import { NbThemeModule, 
           NbLayoutModule, 
           NbSidebarModule, 
@@ -45,7 +49,9 @@ import {ShowcaseDialogComponent} from './components/showcase-dialog/showcase-dia
     NbSelectModule,
     NbInputModule,
     NbFormFieldModule,
-    NbSearchModule
+    NbSearchModule,
+    MatTableModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
